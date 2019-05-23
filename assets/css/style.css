@@ -370,7 +370,7 @@ body
 .form-control
 {
     border-radius: 20px;
-    width: 161px !important;
+    width: 171.6px !important;
     margin-right: 20px;
     margin-bottom: 30px;
 }
@@ -476,7 +476,7 @@ iframe
         height: 100%;
     }
     .form-control{
-        width: 280px !important;
+        width: 300px !important;
     }
     
    
@@ -507,7 +507,7 @@ iframe
         
     }
     .form-control {
-        width: 206px !important;
+        width: 226.6px !important;
     }
 
 }
@@ -518,6 +518,32 @@ iframe
     } */
     .form-control {
         width: 100% !important;
+    }
+    .kafle{
+        width: 100%;
+
+    }
+    .nav {
+        width: 100% !important;
+    }
+    .kafel{
+        width: 100%;
+
+    }
+    .kafel:hover
+    {
+        width: 100%;
+        color: white;
+        border-bottom-right-radius: 20px;
+        border-top-right-radius: 20px;
+        background-color: rgba(46,181,229, 0.7);
+    }
+    .nav .kafel:hover:last-child {
+        width: 100%;
+        color: white;
+        border-bottom-right-radius: 20px;
+        border-top-right-radius: 20px;
+        background-color: rgba(46,181,229, 0.7);
     }
 }
 /* .ceny img{
