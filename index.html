@@ -8,87 +8,111 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     
     <!-- jQuery -->
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-
+    <script src="assets/js/jquery-3.4.1.min.js"></script>
     <!-- bootstrap css -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-
+    <link rel="stylesheet" href="assets/js/bootstrap.min.css">
     <!-- bootstrap js -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-
+    <script src="assets/js/bootstrap.min.js"></script>
     <!-- Slick css -->
-    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
-
+    <link rel="stylesheet" href="assets/js/slick.css">
+    <!-- style menu -->
+    <link rel="stylesheet" href="assets/css/menu.css">
     <!-- Slick js -->
-    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-    
+    <script src="assets/js/slick.min.js"></script>
+    <!-- kbmodal -->
+    <link rel="stylesheet" href="assets/css/KBmodal.css">
+    <script src="assets/js/KBmodal.js"></script>
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
     <!-- custom js -->
     <script src="assets/js/custom.js"></script>
 
-   <!-- główny plik styli -->
+    <!-- główny plik styli -->
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-    <header>
+    <header class="main-header">
         <div class="headInfo">
             <div class="znajdziesz">Znajdziesz nas tutaj! Nowy Dwór Mazowiecki ul. Zakroczymska</div>
         </div>
-            <div class="container">
-                <div class="row">
-                    <div class="banner">
-                        <div class="logo">
-                                <a href="index.html">
-                                    <img src="assets/img/logo.png">
-                                </a>
+        
+                <div class="navSpaceHolder"></div>
+
+                <nav class="navbar navbar-default navbar-starter-theme">
+                    <div class="container">
+                        <div class="row">
+                            <div class="navContainer">
+                                <div class="navbar-header">
+                                    <!-- Logo - telefony -->
+                                    <a class="navbar-brand" href="#">
+                                        <img src="assets/img/logo.png" alt="">
+                                    </a>
+                                    <!-- Przycisk do rozwiania menu - telefony -->
+                                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                                        <span class="sr-only">Toggle navigation</span>
+                                        <span class="icon-bar"></span>
+                                        <span class="icon-bar"></span>
+                                        <span class="icon-bar"></span>
+                                    </button>
+                                </div>
+
+                                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                                    <ul class="nav navbar-nav navbar-right menu">
+                                        <li><a href="#onas">O Nas</a></li>
+                                        <li><a href="#oferta">Oferta</a></li>
+                                        <li><a href="#galeria">Galeria</a></li>
+                                        <li><a href="#kontakt">Kontakt</a></li>
+                                    </ul>
+                                </div>
+                            </div>
                         </div>
-                        <div class="menu">
-                            <ul class="navigation">
-                                <li><a href="#onas">O nas</a></li>
-                                <li><a href="#oferta">Oferta</a></li>
-                                <li><a href="#galeria">Galeria</a></li>
-                                <li><a href="#kontakt">Kontakt</a></li>
-                            </ul>
-                        </div>
-                    </div>   
-                </div>
-            </div>
-        </nav>
+                    </div>
+                </nav>  
+           
     </header>
     
-    <main>
+    <main class="main-content">
         <section class="slider">
-            <div class="slideritem">
-                <div class="test">
+            <div class="sliderContent">
+                <div class="slideritem" style="background-image: url('assets/img/slider1.png');">
+                
+                </div>
+                <div class="slideritem" style="background-image: url('assets/img/slider2.png');">
+                
+                </div>
+            </div>
+            <div class="sliderContent--left"><img src="assets/img/arrowleft.png"></div>
+            <div class="sliderContent--right"><img src="assets/img/arrowright.png"></div>
+            <div class="test">
                     <div class="tekst">
                         <p class="textslider">Sklep Rybny - Eko Fish <br/>
                             Najlepszy </br>
                             w Nowym Dworze Mazowiecki</p>
                     </div>
                     <div class="zapewniki">
-                        <div class="container">
-                            <div class="flexzap">
-                                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
-                                    <div class="iconzap">
-                                        <img src="assets/img/ikona_ceny.png"> 
-                                    </div> 
-                                    <p class="textzap">Konkurencyjne Ceny</p>
-                                </div>
-                                <div class="col-lg-4 col-md-4 col-sm-4col-xs-4">
+                            <div class="container">
+                                <div class="flexzap">
+                                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
                                         <div class="iconzap">
-                                            <img src="assets/img/ikona_obsluga.png"> 
+                                            <img src="assets/img/ikona_ceny.png"> 
                                         </div> 
-                                    <p class="textzap">Profesjonalna Obsługa</p>
-                                </div>
-                                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
-                                        <div class="iconzap">
-                                            <img src="assets/img/ikona_kropla.png"> 
-                                        </div> 
-                                   <p class="textzap">Gwarantowana Świeżość</p>
+                                        <p class="textzap">Konkurencyjne Ceny</p>
+                                    </div>
+                                    <div class="col-lg-4 col-md-4 col-sm-4col-xs-4">
+                                            <div class="iconzap">
+                                                <img src="assets/img/ikona_obsluga.png"> 
+                                            </div> 
+                                        <p class="textzap">Profesjonalna Obsługa</p>
+                                    </div>
+                                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                                            <div class="iconzap">
+                                                <img src="assets/img/ikona_kropla.png"> 
+                                            </div> 
+                                    <p class="textzap">Gwarantowana Świeżość</p>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
                     </div>
-                </div>
             </div>
             
         </section>
@@ -155,13 +179,13 @@
                 <p class="galerytitle">Galeria</p>
                     <div class="galeria">
                         
-                        <div class="">
+                        <div class="KBmodal" data-content-url="assets/img/galeria1big.jpg" data-content-type="gallery" data-content-gallery="gal1">
                             <img class="obrazek" src="assets/img/galeria1.jpg">
                         </div>
-                        <div class="">
+                        <div class="KBmodal" data-content-url="assets/img/galeria2big.jpg" data-content-type="gallery" data-content-gallery="gal1">
                             <img class="obrazek" src="assets/img/galeria2.jpg">
                         </div>
-                        <div class="">
+                        <div class="KBmodal" data-content-url="assets/img/galeria3big.jpg" data-content-type="gallery" data-content-gallery="gal1">
                             <img class="obrazek" src="assets/img/galeria3.png">
                         </div>
                     </div>
