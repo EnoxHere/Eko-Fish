@@ -90,8 +90,9 @@ body
 .menu
 {
     display: flex;
-    font-size: 30px;
+    font-size: 23px;
     align-items: center;
+    justify-content: flex-end;
 }
 .navigation
 {
@@ -133,10 +134,10 @@ body
 .tekst
 {
     color: white;
-    font-size: 5vw;
+    font-size: 3vw;
     -webkit-text-fill-color: white;
     -webkit-text-stroke-color: black;
-    -webkit-text-stroke-width: 0.25vw;; 
+    /* -webkit-text-stroke-width: 0.25vw;;  */
     height: calc(100% - 200px);
     display: flex;
     align-items: center;
@@ -227,7 +228,13 @@ body
 .textonas
 {
     font-size: 17px;
-    color: grey;
+    color: black;
+    font-weight: initial;
+    text-align: left;
+}
+.textonas p
+{
+    font-weight: bold;
 }
 .offerdiv
 {
@@ -261,6 +268,7 @@ body
     margin-bottom: 10px;
     transition: opacity 2s;
     text-decoration: none;
+    border: 0.5px solid white;
 
 }
 .kafel:hover
@@ -304,8 +312,7 @@ body
     margin: 20px;
     margin-bottom:20px;
     font-size: 15px;
-    font-weight: bold;
-    text-align: center;
+    text-align: left;
 }
 .animacja
 {
@@ -530,17 +537,25 @@ iframe
     .form-control{
         width: 300px !important;
     }
+    .obrazek
+    {
+        margin-top: 15px;
+    }
     
    
 
 }
 @media screen and (max-width: 991px){
-    .nav{
+    .nav.nav-tabs{
         width: 400px !important;
     }
     /* .flexzap{
         font-size: 20px;
     } */
+    .nav .navbar-nav .navbar-right menu
+    {
+    width: 100% !important;
+    }
     .kafel{
         width: 280px;
         font-size: 22px;
@@ -585,7 +600,7 @@ iframe
         width: 100%;
 
     }
-    .nav {
+    .nav.nav-tabs {
         width: 100% !important;
     }
     .kafel{
@@ -637,5 +652,10 @@ iframe
         width: 50%;
         transition: width .5s;
     }
+    .slideritem
+    {
+        height: 16.4vw;
+    }
+    
 }
 
