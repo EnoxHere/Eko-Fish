@@ -51,4 +51,22 @@
 		}
 	}
 
+	$(document).on('click', '.menu li a[href^="#"]', function (event){
+		event.preventDefault();
+		// document.querySelector('.navbar').
+		if (window.innerWidth < 768){
+			$('.navbar-toggle').trigger('click');
+		}
+		$('html, body') .animate({
+			scrollTop: $($.attr(this, 'href')).offset().top - 132 
+		}, 500);
+	});	
+
+	$(document).on('click', '.back-to-top', function (event){
+		$('html, body') .animate({
+			scrollTop: 0
+		}, 500);
+	});	
+
+
 })(jQuery);

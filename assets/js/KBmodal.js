@@ -120,11 +120,11 @@
 
 	    	modalBody = '<div class="KBmodal__image">';
 
-	    	modalBody += '<div class="KBgalleryNav KBprev"><i class="fa fa-caret-left" aria-hidden="true"></i></div>';
+	    	modalBody += '<div class="KBgalleryNav KBprev"><i class="fas fa-fish" aria-hidden="true"></i></div>';
 
 	    	modalBody += '<img src="'+self.contentUrl+'">';
 
-	    	modalBody += '<div class="KBgalleryNav KBnext"><i class="fa fa-caret-right" aria-hidden="true"></i></div>';
+	    	modalBody += '<div class="KBgalleryNav KBnext"><i class="fas fa-fish" aria-hidden="true"></i></div>';
 
 			modalBody += '</div>';
 			return modalBody;
